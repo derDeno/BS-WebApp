@@ -104,7 +104,7 @@ function hostLink(id) {
 
 // Vivo Video
 function getVivoVideo(url) {
-	$$.get('http://bs.pixelartdev.com/cors.php?id&url='+url, function(data) {
+	$$.get('http://pixelartdev.github.io/BS-WebApp/cors.php?id&url='+url, function(data) {
 		var timestamp;
 		var hash; // = url.substring(url.lastIndexOf('/') + 1);
 		
@@ -122,7 +122,7 @@ function getVivoVideo(url) {
 		
 		app.showPreloader('Countdown');
 		setTimeout(function() {
-			$$.post('http://bs.pixelartdev.com/cors.php?id&url='+url, 'hash='+hash+'&timestamp='+timestamp, function(res) {
+			$$.post('http://pixelartdev.github.io/BS-WebApp/cors.php?id&url='+url, 'hash='+hash+'&timestamp='+timestamp, function(res) {
 				console.log('weiter gehts');
 				var html = new DOMParser().parseFromString(res, 'text/html');
 				var divs = html.getElementsByTagName('div');
@@ -142,7 +142,7 @@ function getVivoVideo(url) {
 
 /* Streamcloud Video
 function getStreamcloudVideo(url) {
-	$$.get('http://bs.pixelartdev.com/cors.php?id&url='+url, function(data) {
+	$$.get('http://pixelartdev.github.io/BS-WebApp/cors.php?id&url='+url, function(data) {
 		var fname;
 		var id;
 		
@@ -161,7 +161,7 @@ function getStreamcloudVideo(url) {
 		
 		app.showPreloader('Countdown');
 		setTimeout(function() {
-			$$.post('http://bs.pixelartdev.com/cors.php?&url='+url, 'id='+id+'&fname='+fname+'&imhuman=Weiter zum Video&op=download1&usr_login&hash', function(res) {
+			$$.post('http://pixelartdev.github.io/BS-WebApp/cors.php?&url='+url, 'id='+id+'&fname='+fname+'&imhuman=Weiter zum Video&op=download1&usr_login&hash', function(res) {
 				var html = new DOMParser().parseFromString(res, 'text/html');
 				var s = html.getElementsByTagName('script');
 				console.log(res);
@@ -182,7 +182,7 @@ function getStreamcloudVideo(url) {
 function playVideo(url) {
 	var popupHTML = '<div class="popup">'+
                     '<div class="content-block">'+
-                      '<video width="100%" controls> <source src="http://bs.pixelartdev.com/cors.php?id&url='+url+'">Kein Video support!</video>'+
+                      '<video width="100%" controls> <source src="http://pixelartdev.github.io/BS-WebApp/cors.php?id&url='+url+'">Kein Video support!</video>'+
                       '<br><p><a href="#" class="button button-fill close-popup">Schlie&szlig;en</a></p>'+
                     '</div>'+
                   '</div>'
