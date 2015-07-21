@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="with-statusbar-overlay" manifest="manifest.php">
+	<head>
+    	<title>Burning Series</title>
+    	<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-title" content="Burning Series">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	    
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        
+	    <link rel="stylesheet" href="css/f7.min.css">
+	    <link rel="stylesheet" href="css/app.css">
+        
+        <link rel="apple-touch-icon" href="img/ios/Icon-60@2x.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="img/ios/Icon-60@3x.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="img/ios/Icon-76.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="img/ios/Icon-76@2x.png" />
+        <link rel="apple-touch-icon" sizes="58x58" href="img/ios/Icon-Small@2x.png" />
+                
+  	</head>
+  	<body>
+	  	<div class="statusbar-overlay"></div>
+	    <div class="panel-overlay"></div>
+  
+		<!-- Slider start  -->
+		<div class="panel panel-left panel-reveal">
+		 	<div class="view view-panel">
+			  	<!-- Menu start -->
+			  	<div class="content-block-title welcome">Hallo</div>
+			  	<div class="list-block">
+		        	<ul>
+						<li>
+				   			<a href="index.html" class="item-link close-panel">
+				                <div class="item-content">
+									<div class="item-media">
+				 				  		<i class="icon icon-list"></i> 
+									</div>
+									<div class="item-inner"> 
+						  				<div class="item-title">Alle Serien</div>
+									</div>
+								</div>
+				    		</a>
+			    		</li>
+                        <li class="fav-menu">
+							<a href="favorite.html" class="item-link close-panel">
+				                <div class="item-content">
+									<div class="item-media">
+					 				  	<i class="icon icon-heart"></i> 
+									</div>
+									<div class="item-inner">
+					                    <div class="item-title">Favoriten</div>
+					                </div>
+				                </div>
+						    </a>
+					    </li>
+						<li>
+							<a href="settings.html" class="item-link close-panel">
+				                <div class="item-content">
+									<div class="item-media">
+					 				  	<i class="icon icon-settings"></i> 
+									</div>
+									<div class="item-inner">
+					                    <div class="item-title">Einstellungen</div>
+					                </div>
+				                </div>
+						    </a>
+					    </li>
+					</ul>
+		      	</div>
+	 		</div>
+    	</div>
+		<!-- Slider end -->
+	    
+	    
+	    <!-- Views-->
+	    <div class="views">
+      		<div class="view view-main">
+				
+                <div class="navbar color-white bg-blue theme-white">
+	          		<div class="navbar-inner">
+			    		<div class="left">
+				  			<a href="#" class="link icon-only open-panel"><i class="icon icon-menu"></i></a>
+	            		</div>
+	            		<div class="center sliding">Burning Series</div>
+                        <div class="right">
+                        	<a href="login.html" class="open-login-screen loginer">Login</a>
+                            <a href="#" class="logouter">Logout</a>
+                    	</div>
+	          		</div>
+	        	</div>
+			
+	        	<div class="pages navbar-through toolbar-through">
+					<!-- conent starts here -->
+	          		<div data-page="series-list" class="page">
+                    
+                        <form class="searchbar">
+                            <div class="searchbar-input">
+                                <input type="search" placeholder="Suchen"><a href="#" class="searchbar-clear"></a>
+                            </div>
+                            <a href="#" class="searchbar-cancel">Abbrechen</a>
+                        </form>
+                        
+                        <div class="searchbar-overlay"></div>
+                        <div class="page-content pull-to-refresh-content" data-distance="40">
+                        	
+                            <div class="pull-to-refresh-layer">
+                                <div class="preloader"></div>
+                                <div class="pull-to-refresh-arrow"></div>
+                            </div>
+                            
+                            <div class="content-block searchbar-not-found">
+                            	<div class="content-block-inner">Kein Ergebnis</div>
+                            </div>
+							
+							<div class="list-block virtual-list list-block-search searchbar-found">
+								
+							</div>
+							
+                        </div>
+                        
+                    </div>
+	        	</div>
+                
+      		</div>
+    	</div>
+		
+		<!-- Scripts -->
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-64345545-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/f7.min.js"></script>
+		<script type="text/javascript" src="js/function.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	
+  	</body>
+</html>
