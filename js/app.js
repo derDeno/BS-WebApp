@@ -395,9 +395,8 @@ app.onPageInit('staffel', function(page) {
 			out += '	<ul>';
 			
 			for(var i=0; i<data.epi.length; i++) {
-				var is = i++;
 				out += ' 	<li>';
-				out += ' 		<a href="single-episode.html?id='+id+'&staffel='+staffel+'&folge='+is+'" class="item-content item-link" >';
+				out += ' 		<a href="single-episode.html?id='+id+'&staffel='+staffel+'&folge='+data.epi[i].epi+'" class="item-content item-link" >';
 				out += ' 			<div class="item-inner">';
 				out += '				<div class="item-title-row">';
 				out += ' 					<div class="item-title">'+ data.epi[i].german +'</div>';
