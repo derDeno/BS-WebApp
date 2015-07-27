@@ -354,7 +354,7 @@ app.onPageInit('staffel', function(page) {
 		if(loggedIn() != false) {
 			out += '	<ul>';
 			
-			for(var i=0; i < data.epi.length; i++) {
+			for(var i=0; i<data.epi.length; i++) {
 				var watched = data.epi[i].watched;
 				
 				out += ' 	<li class="swipeout">';
